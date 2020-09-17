@@ -20,7 +20,7 @@
         </section>
       </div>
       <div class="col-md-2 col-sm-2 col-xs-12">
-              <div class="" style="padding-top:170px">
+              <div class="text-center" style="padding-top:170px">
               <button type="button" @click="moveItem(0)" class="btn btn-secondary"> < </button>
               <button type="button" @click="moveItem(1)" class="btn btn-secondary"> > </button>
           </div>

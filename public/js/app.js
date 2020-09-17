@@ -39330,35 +39330,42 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-2 col-sm-2 col-xs-12" }, [
-        _c("div", { staticStyle: { "padding-top": "170px" } }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-secondary",
-              attrs: { type: "button" },
-              on: {
-                click: function($event) {
-                  return _vm.moveItem(0)
+        _c(
+          "div",
+          {
+            staticClass: "text-center",
+            staticStyle: { "padding-top": "170px" }
+          },
+          [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    return _vm.moveItem(0)
+                  }
                 }
-              }
-            },
-            [_vm._v(" < ")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-secondary",
-              attrs: { type: "button" },
-              on: {
-                click: function($event) {
-                  return _vm.moveItem(1)
+              },
+              [_vm._v(" < ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-secondary",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    return _vm.moveItem(1)
+                  }
                 }
-              }
-            },
-            [_vm._v(" > ")]
-          )
-        ])
+              },
+              [_vm._v(" > ")]
+            )
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-md-5 col-sm-5 col-xs-12" }, [
@@ -52107,8 +52114,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\testing1\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\testing1\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\testing\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\testing\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
