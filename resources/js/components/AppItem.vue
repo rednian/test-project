@@ -69,11 +69,14 @@ export default {
       async moveItem(value){
         var vm = this;
        var  item = {is_selected : value};
-        await axios.patch(`/api/item/${vm.selected}`, item,{method:'post'}).then(function(response){
+       if(vm.selected){
+           await axios.patch(`/api/item/${vm.selected}`, item,{method:'post'}).then(function(response){
             if(response.status == 200){
                 vm.getItems();
             }
         });
+       }
+        
       },
 
      selectItem(item){

@@ -2047,7 +2047,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 item = {
                   is_selected: value
                 };
-                _context.next = 4;
+
+                if (!vm.selected) {
+                  _context.next = 5;
+                  break;
+                }
+
+                _context.next = 5;
                 return axios.patch("/api/item/".concat(vm.selected), item, {
                   method: 'post'
                 }).then(function (response) {
@@ -2056,7 +2062,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   }
                 });
 
-              case 4:
+              case 5:
               case "end":
                 return _context.stop();
             }
