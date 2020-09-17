@@ -1,9 +1,7 @@
 <template>
  <div>
      <div class="alert alert-danger" role="alert" v-if="errors">
-         <ul>
-             <li v-for="error in errors">{{ error[0] }}</li>
-         </ul>
+            <div v-for="error in errors">{{ error[0] }}</div>
      </div>
       <section class="row">
       <div class="col-md-5 col-sm-5 col-xs-12">
